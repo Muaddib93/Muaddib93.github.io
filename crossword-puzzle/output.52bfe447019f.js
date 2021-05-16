@@ -4,6 +4,7 @@
     "object" == typeof module && "object" == typeof module.exports ? module.exports = e.document ? t(e, !0) : function(e) {
         if (!e.document)
             throw new Error("jQuery requires a window with a document");
+        return t(e)
     }
     : t(e)
 }("undefined" != typeof window ? window : this, function(e, t) {
@@ -5326,8 +5327,7 @@ $(document).ready(function() {
     //    zoom_level = Math.max(.2, zoom_level);
     //    $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
     //}));
-	
-    $('#zoom-out').on("click keypress", clickKey(function(e) {
+	$('#zoom-out').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .active');
@@ -5406,7 +5406,6 @@ $(document).ready(function() {
         //    clue.addClass("correct");
         //}
     }));
-	
     $('#toggle-layout').click(function() {
         $('#flex-wrapper').toggleClass("clues-stacked");
         var is_vertical = $('#flex-wrapper').hasClass("clues-stacked");
