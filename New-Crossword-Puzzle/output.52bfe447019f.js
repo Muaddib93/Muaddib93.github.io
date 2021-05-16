@@ -5432,9 +5432,21 @@ $(document).ready(function() {
         $('#mini-menu').removeClass("menu-expanded");
     });
     $('#clear-puzzle').on('click keypress', clickKey(function() {
-        if (confirm("Click OK if you really want to clear the puzzle")) {
-            window.clearPuzzle();
-        }
+        //if (confirm("Click OK if you really want to clear the puzzle")) {
+            //window.clearPuzzle();
+        //}
+		$('.cx-a').each(function() {
+            $(this).text("");
+        });
+        try {
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                if (key.indexOf("" + CROSSWORD_ID + "-") == 0) {
+                    localStorage.removeItem(key);
+                }
+            }
+        } catch (e) {}
+        grade();
     }));
     $('#print-form').on('submit', function(e) {
         var val = $('#print-select').val();
@@ -5602,20 +5614,20 @@ $(document).ready(function() {
             } catch (e) {}
         }
     }
-    window.clearPuzzle = function() {
-        $('.cx-a').each(function() {
-            $(this).text("");
-        });
-        try {
-            for (var i = 0; i < localStorage.length; i++) {
-                var key = localStorage.key(i);
-                if (key.indexOf("" + CROSSWORD_ID + "-") == 0) {
-                    localStorage.removeItem(key);
-                }
-            }
-        } catch (e) {}
-        grade();
-    }
+    //window.clearPuzzle = function() {
+    //    $('.cx-a').each(function() {
+    //        $(this).text("");
+    //    });
+    //    try {
+    //        for (var i = 0; i < localStorage.length; i++) {
+    //            var key = localStorage.key(i);
+    //            if (key.indexOf("" + CROSSWORD_ID + "-") == 0) {
+    //                localStorage.removeItem(key);
+    //            }
+    //        }
+    //    } catch (e) {}
+    //    grade();
+    //}
     function grade() {
         return gradeAll();
         var cells = $('.cx .highlighted');
