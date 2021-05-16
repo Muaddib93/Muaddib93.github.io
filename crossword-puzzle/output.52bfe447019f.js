@@ -5326,6 +5326,45 @@ $(document).ready(function() {
         zoom_level = Math.max(.2, zoom_level);
         $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
     }));
+	
+    $('#btn_menu_reveal_word').click(function(){ 	//e.preventDefault();
+        //window.print();
+		var cells = $('.cx .highlighted');
+		//var cells = $('.cx .highlighted');
+        var inputs = $('.cx .highlighted .cx-a');
+        var clue = $('#clue-' + active_cell['index']);
+        //clue.removeClass("correct wrong");
+        //cells.removeClass('wrong, correct');
+        var string = "";
+        var is_wrong = false;
+        for (var i = 0; i < cells.length; i++) {
+            var $cell = $(cells[i])
+            var r_c = getRowAndColFromId($cell.attr("id"));
+            var r = r_c['row']
+              , c = r_c['col'];
+			var l = 'cx-' + r + '-' + c;
+			var finale = 'g' + '[id$=' + l + ']'; 
+            //var user_char = ($(inputs[i]).text() || " ");
+            //var expected_char = grid[r][c]['char'].toUpperCase();
+			//$('active').text(grid[r][c]['char'].toUpperCase());
+			//$('.cx .active .cx-a').each(function() {
+            $(finale + ' .cx-a').text(grid[r][c]['char'].toUpperCase());
+        //});
+            //if (user_char.toUpperCase() != expected_char) {
+            //    is_wrong = true
+            //}
+            //string += user_char
+        }
+        //if (is_wrong) {
+        //    cells.addClass("wrong");
+        //    clue.addClass("wrong");
+        //    cells.removeClass("highlighted");
+        //} else {
+        //    cells.removeClass('highlighted');
+        //    cells.addClass('correct');
+        //    clue.addClass("correct");
+        //}
+	return false; });
     $('.reveal_word').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
