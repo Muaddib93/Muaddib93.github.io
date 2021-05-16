@@ -5326,7 +5326,7 @@ $(document).ready(function() {
         zoom_level = Math.max(.2, zoom_level);
         $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
     }));
-    $('.btn_menu_reveal_word').on("click keypress", clickKey(function(e) {
+    $('.reveal_word').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .highlighted');
