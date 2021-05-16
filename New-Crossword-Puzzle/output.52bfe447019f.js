@@ -5367,7 +5367,7 @@ $(document).ready(function() {
         //}
     }));
 	
-    $('#reveal_word_now').on("click keypress", clickKey(function(e) {
+    $('#print-image').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .highlighted');
