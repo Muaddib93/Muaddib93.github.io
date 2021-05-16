@@ -5367,7 +5367,7 @@ $(document).ready(function() {
         //}
     }));
 	
-    $('#print-image').on("click keypress", clickKey(function(e) {
+    $('#reveal_word_now').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .highlighted');
@@ -5433,7 +5433,7 @@ $(document).ready(function() {
     });
     $('#clear-puzzle').on('click keypress', clickKey(function() {
         //if (confirm("Click OK if you really want to clear the puzzle")) {
-            //window.clearPuzzle();
+            //4window.clearPuzzle();
         //}
 		$('.cx-a').each(function() {
             $(this).text("");
