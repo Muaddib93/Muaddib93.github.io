@@ -5320,16 +5320,17 @@ $(document).ready(function() {
         zoom_level = Math.min(10, zoom_level);
         $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
     }));
-    $('#zoom-out').on("click keypress", clickKey(function(e) {
-        e.preventDefault();
-        zoom_level -= zoom_inc;
-        zoom_level = Math.max(.2, zoom_level);
-        $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
-    }));
+    //$('#zoom-out').on("click keypress", clickKey(function(e) {
+    //    e.preventDefault();
+    //    zoom_level -= zoom_inc;
+    //    zoom_level = Math.max(.2, zoom_level);
+    //    $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
+    //}));
 	
-    $('#btn_menu_reveal_word').click(function(){ 	//e.preventDefault();
+    $('#zoom-out').on("click keypress", clickKey(function(e) {
+		//e.preventDefault();
         //window.print();
-		var cells = $('.cx .highlighted');
+		var cells = $('.cx .active');
 		//var cells = $('.cx .highlighted');
         var inputs = $('.cx .highlighted .cx-a');
         var clue = $('#clue-' + active_cell['index']);
@@ -5348,7 +5349,7 @@ $(document).ready(function() {
             //var expected_char = grid[r][c]['char'].toUpperCase();
 			//$('active').text(grid[r][c]['char'].toUpperCase());
 			//$('.cx .active .cx-a').each(function() {
-            $(finale + ' .cx-a').text(grid[r][c]['char'].toUpperCase());
+            $('.active .cx-a').text(grid[r][c]['char'].toUpperCase());
         //});
             //if (user_char.toUpperCase() != expected_char) {
             //    is_wrong = true
@@ -5364,8 +5365,9 @@ $(document).ready(function() {
         //    cells.addClass('correct');
         //    clue.addClass("correct");
         //}
-	return false; });
-    $('.reveal_word').on("click keypress", clickKey(function(e) {
+    }));
+	
+    $('#print-image').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .highlighted');
@@ -5404,6 +5406,7 @@ $(document).ready(function() {
         //    clue.addClass("correct");
         //}
     }));
+	
     $('#toggle-layout').click(function() {
         $('#flex-wrapper').toggleClass("clues-stacked");
         var is_vertical = $('#flex-wrapper').hasClass("clues-stacked");
