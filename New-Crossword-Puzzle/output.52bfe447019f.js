@@ -5448,6 +5448,18 @@ $(document).ready(function() {
         } catch (e) {}
         grade();
     }));
+	$('#solve-puzzle').on('click keypress', clickKey(function() {
+        
+		for(var r = 0; r < grid.length; r++){
+    for(var c = 0; c < grid[r].length; c++){
+        var cell = grid[r][c];
+        if(cell == null) continue;
+		var l = 'cx-' + r + '-' + c;
+		var finale = '#' + l;
+		$(finale + ' .cx-a').text(grid[r][c]['char'].toUpperCase());
+    }
+}
+    }));
     $('#print-form').on('submit', function(e) {
         var val = $('#print-select').val();
         if (val == "this") {
