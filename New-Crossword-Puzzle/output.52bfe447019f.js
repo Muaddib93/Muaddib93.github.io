@@ -5327,7 +5327,7 @@ $(document).ready(function() {
         zoom_level = Math.max(.2, zoom_level);
         $('#crossword svg').css("transform", "scale(" + zoom_level + ")");
     }));
-	$('#print-image-new').on("click keypress", clickKey(function(e) {
+	$('#reveal-letter').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .active');
@@ -5367,7 +5367,7 @@ $(document).ready(function() {
         //}
     }));
 	
-    $('#print-image').on("click keypress", clickKey(function(e) {
+    $('#reveal-word').on("click keypress", clickKey(function(e) {
 		//e.preventDefault();
         //window.print();
 		var cells = $('.cx .highlighted');

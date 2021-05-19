@@ -8,7 +8,13 @@
         <meta name="description" content="Giving everyone what they need.; Mental models are created by our past ____; Important for inclusion of Persons with Disabilities; Right Brain vs Left Brain is a form of --------- diversity; Low sense of belonging can lead to______ Exclusion.; Most..." />
         <link rel="alternate" type="application/json+oembed" href="https://crosswordlabs.com/oembed?url=https%3A//crosswordlabs.com/embed/2021-05-09-372&format=json" title="Untitled oEmbed URL" />
         <link rel="alternate" type="text/xml+oembed" href="https://crosswordlabs.com/oembed?url=https%3A//crosswordlabs.com/embed/2021-05-09-372&format=xml" title="Untitled oEmbed URL" />
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
         
 
 <link rel="stylesheet" href="output.dd7ffed8125a.css" type="text/css">
@@ -34,6 +40,20 @@
 </head>
 
 <body>
+<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red", id="zoom-in"><i class="material-icons">zoom_in</i></a></li>
+      <li><a class="btn-floating yellow darken-1", id="zoom-out"><i class="material-icons">zoom_out</i></a></li>
+      <li><a class="btn-floating green", id = "reveal-letter"><i class="material-icons">explicit</i></a></li>
+      <li><a class="btn-floating blue" id = "reveal-word"><i class="material-icons">http</i></a></li>
+	  <li><a class="btn-floating blue", id="solve-puzzle"><i class="material-icons">check</i></a></li>
+	  <li><a class="btn-floating blue", id="clear-puzzle"><i class="material-icons">clear</i></a></li>
+	  
+    </ul>
+  </div>
     
     <div id="flex-wrapper" role="main">
         <div id="puzzle" class="valid-parent">
@@ -158,47 +178,7 @@
     </div>
 
     
-	<div id="finish-up2">
-                            <div id="view-buttons" class="button">
-                                <div class="mini-menu-proper">
-                                    
-                                        
-<div id="mini-menu" class="" role="menu" aria-label="Puzzle Menu">
-    <a id="menu-expander" href="/view/2021-05-09-372" onclick="return false"><img src="Hamburger_Button.png" id="menu_expander" /></a>
-    <div id="mini-menu-content">
-        <div>
-            <img src="/static/1619885195/img/search-plus.svg" tabindex="0" id="zoom-in" role="button" aria-label="Zoom in" />
-        </div>
-        <div>
-            <img src="/static/1619885195/img/search-minus.svg" tabindex="0" id="zoom-out" role="button" aria-label="Zoom out" />
-        </div>
-        <div class="print-icon-new"><img tabindex="0" role="button" aria-label="PrintNew" src="/static/1619885195/img/print.svg" id="print-image-new" alt="Reveal Letter"/></div>
-        <div class="print-icon"><img tabindex="0" role="button" aria-label="Print" src="/static/1619885195/img/print.svg" id="print-image" alt="Reveal Word"/></div>
-        
-        <div style="display:none">
-            <!--<img src="/static/1619885195/img/grip-lines.svg" id="toggle-layout" />-->
-            <strong id="toggle-layout">Switch Layout</strong>
-        </div>
-        <div>
-		<img tabindex="0" role="button" aria-label="ClearPuzzle" src="/static/1619885195/img/print.svg" id="clear-puzzle" alt="Clear Puzzle"/
-        <!-- <strong id="clear-puzzle" role="button" tabindex="0">Clear Puzzle</strong> -->
-        </div>
-		<div>
-		<img tabindex="0" role="button" aria-label="SolvePuzzle" src="/static/1619885195/img/print.svg" id="solve-puzzle" alt="Solve Puzzle"/
-        <!-- <strong id="clear-puzzle" role="button" tabindex="0">Clear Puzzle</strong> -->
-        </div>
-    </div>
-</div>
-
-                                    
-                                </div>
-
-                                
-                                   
-                        
-
-                    </div> <!-- /stage2 -->
-                </div> <!-- wrapper -->
+	
 	
 	
 	
