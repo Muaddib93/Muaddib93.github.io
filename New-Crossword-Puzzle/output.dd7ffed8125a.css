@@ -1516,11 +1516,12 @@ h1 {
     position:sticky;
     position: -webkit-sticky;
 	/*border-top:5px solid #38341c;*/
-    max-width:900px;
+    max-width:6000px;
     margin:auto;
 	padding-top:5px;
     display:flex;
 	font-size:14px;
+	width:400px
 }
 
 #hidden-field {
