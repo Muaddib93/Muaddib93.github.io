@@ -1707,7 +1707,7 @@ h1 {
 
 #clues ol {
 	overflow:auto;
-	height:calc(25vh);
+	height:calc(35vh);
 	list-style-type:none;
 	padding-top:0;
 }
@@ -2010,7 +2010,7 @@ ol, ul {
     }
 
     #clues {
-        width:25vw;
+        width:15vw;
         height:100vh;
         /*overflow:hidden;*/
         overflow:auto;
