@@ -2147,7 +2147,7 @@ ol, ul {
     #clues ol {
         overflow:visible;
         height:auto;
-		width:20px;
+		width:-20px;
     }
 
     #crossword {
