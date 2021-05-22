@@ -534,7 +534,7 @@ p.error {
 }
 
 #stage-2 {
-	
+	border-top:5px solid #38341c;
 	border-bottom:5px solid #38341c;
 	padding:20px 25px;
 }
@@ -1707,7 +1707,7 @@ h1 {
 
 #clues ol {
 	overflow:auto;
-	height:calc(50vh);
+	height:calc(25vh);
 	list-style-type:none;
 	padding-top:0;
 }
