@@ -1509,6 +1509,10 @@ h1 {
 
 /* interactive */
 
+#fixed-action-btn {
+	position:fixed;
+}
+
 #clues {
 	bottom:0;
     z-index:2;

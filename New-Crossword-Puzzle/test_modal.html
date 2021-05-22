@@ -1,0 +1,224 @@
+<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Crossword</title>
+    <meta name="keywords" content="html5 crossword">
+    <meta name="description" content="html5 crossword">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="crossword/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256- 
+DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">
+</script>
+    <script type="text/javascript" src="crossword/js/easeljs-0.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/dist/easytimer.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+    <script type="text/javascript" src="crossword/js/crossword.js"><script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="crossword/js/materialize.js"></script>           
+ <script 
+src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js
+/materialize.min.js"></script>
+
+
+
+<script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        }
+        )
+    </script>
+
+<div id="rotate" class="rotate"></div>
+
+<div id="content">
+
+
+    
+
+
+
+    
+
+
+
+
+
+    <div id="crossword">
+
+        <nav class="indigo darken-3 z-depth-0">
+            <div class="nav-wrapper">
+                <div id="main_title" class="v_center primary_text game_title"></div>
+                <ul class="right">
+                    <li class=""><a id="reload" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">undo</i></a></li>
+                    <li class=""><a href="#modal8" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="indigo z-depth-1" id="header_clue_wrapper">
+            <div id="header_clue" class="primary_text"></div>
+        </div>
+
+        <div id="game_view">
+            <div id="game">
+                <div id="board">
+                    <div id="dragger">
+<iframe src="https://muaddib93.github.io/New-Crossword-Puzzle/final_html.html" width="100%" style="background-color:#f5f2cd" class="myIframe">
+</iframe>
+
+<script type="text/javascript" language="javascript"> 
+$('.myIframe').css('height', $(window).height()+'px');
+</script>
+
+
+
+
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h4 id="clue_number">#1</h4>
+                    <p id="clue_text">Most biases are ___
+</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a id="reveal_letter" class="dialog_btn reveal_letter modal-action modal-close waves-effect waves-orange btn-flat"></a>
+                    <a id="reveal_word" class="dialog_btn reveal_word modal-action modal-close waves-effect waves-orange btn-flat"></a>
+                    <a id="submit" class="dialog_btn modal-action modal-close waves-effect waves-green btn-flat"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="clue_list">
+
+            <div id="across_container" class="clue_list_wrapper">
+                <div id="across_label" class="clue_list_label"></div>
+                <div id="across_list">
+                    <ul id="across_list_ul"></ul>
+                </div>
+            </div>
+
+            <div id="down_container" class="clue_list_wrapper">
+                <div id="down_label" class="clue_list_label"></div>
+                <div id="down_list">
+                    <ul id="down_list_ul"></ul>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="page-footer blue-grey darken-4">
+
+
+
+
+
+          
+
+            <div id="chrono" class="primary_text"></div>
+
+
+        </footer>
+
+    </div>
+
+
+
+
+
+  
+            
+    <div id="modal3" class="modal modal-fixed-footer">
+        <div id="congrat" class="modal-content">
+            <h4 id="congrat_title">Congratulations</h4>
+            <div class="checkmark center">
+                <object data="crossword/images/checkmark.svg" type="image/svg+xml">
+
+                </object>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="dialog_close modal-action modal-close waves-effect waves-green btn-flat"></a>
+
+        </div>
+    </div>
+<a href="#modal8" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a>
+  
+        <!-- Modal Structure -->
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <h5>Instructions</h5>
+                <p>
+                <div class="red-text">
+                    
+                    This simple crossword game has been designed to help you assess your familiarity with some of the key concepts of diversity and inclusion. The hints for all questions are available in our Resources Section. In case you would like us to create this for you as well, do get in touch with us at info@re-link.org
+
+Instructions:
+To solve any of the questions, just click on the respective clue
+<ul>
+<li>"L" -   will give you the correct Letter for any given box</li>
+<li>"W"-  will give you the Word for that clue</li>
+<li>""- will Reveal whole crossword</li>
+<li>""- will help you clear the quiz</li>
+</ul><br>
+                </div>
+                                
+                </p>
+            </div>
+  
+            <div class="modal-footer">
+                <a href="#!" class="modal-action 
+                    modal-close waves-effect waves-green 
+                    btn green lighten-1">
+                    Close
+                </a>
+            </div>
+        </div>
+    
+    <!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" 
+href="#modal12">Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal12" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn- 
+flat">Agree</a>
+    </div>
+</div>
+
+    <div id="modal4" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 id="clear_title">Clear</h4>
+            <p id="clear_warning"></p>
+        </div>
+        <div class="modal-footer">
+            <a id="btn-no" href="#" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+            <a id="btn-yes" href="#" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+
+        </div>
+    </div>
+
+
+
+</div>
