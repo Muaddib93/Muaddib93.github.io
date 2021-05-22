@@ -1516,11 +1516,11 @@ h1 {
     position:sticky;
     position: -webkit-sticky;
 	/*border-top:5px solid #38341c;*/
-    max-width:6000px;
+    max-width:600px;
     margin:auto;
 	padding-top:5px;
     display:flex;
-	font-size:14px;
+	font-size:8px;
 	width:400px
 }
 
@@ -1574,6 +1574,7 @@ h1 {
 
 #clues li, #clues p {
 	margin-bottom:5px;
+	font-size:9px
 }
 
 #clues li.active {
