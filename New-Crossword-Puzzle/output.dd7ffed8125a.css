@@ -534,7 +534,7 @@ p.error {
 }
 
 #stage-2 {
-	border-top:5px solid #38341c;
+	
 	border-bottom:5px solid #38341c;
 	padding:20px 25px;
 }
@@ -1707,7 +1707,7 @@ h1 {
 
 #clues ol {
 	overflow:auto;
-	height:calc(25vh);
+	height:calc(50vh);
 	list-style-type:none;
 	padding-top:0;
 }
@@ -1934,7 +1934,7 @@ ol, ul {
 
 #flex-wrapper {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     height:-moz-available;
     height: -webkit-fill-available;
     height:fill-available;
@@ -1963,6 +1963,8 @@ ol, ul {
 #clues {
     /*position:static;*/
     /*background-color:red;*/
+	display:flex;
+	flex-direction:column;
 }
 
 #hidden-field {
