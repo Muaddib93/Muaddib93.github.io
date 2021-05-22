@@ -1525,7 +1525,8 @@ h1 {
 	padding-top:5px;
     display:flex;
 	font-size:8px;
-	width:600px
+	width:600px;
+	background-color:#f5f2cd;
 }
 
 #hidden-field {
@@ -1715,7 +1716,7 @@ h1 {
 
 #clues ol {
 	overflow:auto;
-	height:calc(35vh);
+	height:calc(50vh);
 	list-style-type:none;
 	padding-top:0;
 }
@@ -1958,6 +1959,7 @@ ol, ul {
     flex:1;
     overflow:auto;
     position:relative;
+	background-color:#f5f2cd;
 }
 
 #toggle-layout {
