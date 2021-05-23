@@ -1971,7 +1971,6 @@ ol, ul {
 
 #puzzle {
     flex:1;
-    overflow:auto;
     position:relative;
 	background-color:#f5f2cd;
 }
@@ -1985,7 +1984,7 @@ ol, ul {
 }
 
 #clues {
-    /*position:static;*/
+    /*position:absolute;*/
     /*background-color:red;*/
 	display:flex;
 	flex-direction:column;
