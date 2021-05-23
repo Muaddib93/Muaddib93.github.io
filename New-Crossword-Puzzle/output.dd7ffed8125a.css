@@ -1210,6 +1210,10 @@ legend {
     z-index:100;
 }
 
+.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
+     margin: 0px 0;
+}
+
 .modal {
     background-color:#fff;
     max-width:500px;
@@ -1219,7 +1223,10 @@ legend {
     max-height:100%;
     overflow:auto;
 }
-
+.modal .modal-footer{
+	background-color:#fff;
+	height:0px;
+}
 .modal button {
     margin:auto;
     display:block;
@@ -1228,6 +1235,10 @@ legend {
 
 .modal #id_email {
     padding:3px;
+}
+
+.modal .modal-content{
+	padding:0px;
 }
 
 .modal .errorlist {
@@ -1512,6 +1523,9 @@ h1 {
 
 /* interactive */
 
+#fixed-action-btn {
+	position:fixed;
+}
 
 #clues {
 	bottom:0;
@@ -1689,7 +1703,7 @@ h1 {
 }
 
 #down-box {
-    margin-left:0px;
+    margin-left:10px;
 	border-top:1px solid #38341c;
 }
 
