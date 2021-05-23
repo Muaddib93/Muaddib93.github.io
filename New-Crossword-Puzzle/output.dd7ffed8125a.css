@@ -31,6 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: normal;
 }
+body {
+	background-color:#f5f2cd;
+}
 ol, ul {
 	list-style: none;
 }
@@ -1509,9 +1512,6 @@ h1 {
 
 /* interactive */
 
-#fixed-action-btn {
-	position:fixed;
-}
 
 #clues {
 	bottom:0;
@@ -1689,7 +1689,7 @@ h1 {
 }
 
 #down-box {
-    margin-left:10px;
+    margin-left:0px;
 	border-top:1px solid #38341c;
 }
 

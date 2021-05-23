@@ -1,0 +1,31 @@
+       
+
+<html>
+<head>
+  <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  
+    <link href=
+"https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src=
+        "https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+    </script>
+	<script>
+$(document).ready(function(){
+				// Here specify your content or message, enclose between <p>
+        var content = '<div class="modal-content"><p>my content</p></div>';
+        
+        $('.modal').append(content);
+        $('.modal').modal();
+    });
+	</script>
+</head>
+<body>
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+<div id="modal1" class="modal"></div>
+</body>
+</html>

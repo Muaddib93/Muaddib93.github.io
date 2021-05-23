@@ -12,12 +12,19 @@
         <link rel="alternate" type="text/xml+oembed" href="https://crosswordlabs.com/oembed?url=https%3A//crosswordlabs.com/embed/2021-05-09-372&format=xml" title="Untitled oEmbed URL" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  
+    <link href=
+"https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src=
+        "https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+	<script src="output.52bfe447019f.js"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         
 
 <link rel="stylesheet" href="output.dd7ffed8125a.css" type="text/css">
@@ -33,37 +40,44 @@
         <meta property="og:url" content="" />
         <meta property="og:image" content="https://crosswordlabs.com/image/4890268.svg" />
         <meta property="og:image:type" content="image/svg+xml" />
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-         <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  
-    <link href=
-"https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src=
-        "https://code.jquery.com/jquery-2.1.1.min.js">
-    </script>
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
 
-    </script>
+        
 
         <script>
             CROSSWORD_ID = 4890268;
             JS_PAGE = "view";
         </script>
+		
+		<script>
+//Modal trigger
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems);
+});
+</script>
+	<script>
+$(document).ready(function(){
+				// Here specify your content or message, enclose between <p>
+        var content = '<div class="modal-content"></div>';
+        
+        $('.modal').append(content);
+        $('.modal').modal();
+    });
+	</script>
+	
 </head>
 
 <body>
+
+
 <nav class="indigo darken-3 z-depth-0">
             <div class="nav-wrapper">
                 <div id="main_title" class="v_center primary_text game_title"></div>
                 <ul class="right">
                     <li class=""><a id="reload" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">undo</i></a></li>
-                    <li class=""><a href="#modal8" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
-					<li class=""></li>
+                    <li class=""><a href="#modal1" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
+					
                 </ul>
             </div>
         </nav>
@@ -177,14 +191,42 @@
 	
     <div id="ie-test"></div>
 
-    
+   <div id="modal1" class="modal">
+    <h5>Instructions</h5>
+                <p>
+                </p><div class="red-text">
+                    
+                    This simple crossword game has been designed to help you assess your familiarity with some of the key concepts of diversity and inclusion. The hints for all questions are available in our Resources Section. In case you would like us to create this for you as well, do get in touch with us at info@re-link.org
+
+Instructions:
+To solve any of the questions, just click on the respective clue
+<ul>
+<li>"L" -   will give you the correct Letter for any given box</li>
+<li>"W"-  will give you the Word for that clue</li>
+<li>""- will Reveal whole crossword</li>
+<li>""- will help you clear the quiz</li>
+</ul><br>
+                </div>
+                                
+                <p></p>
+            
+  
+            <div class="modal-footer">
+                <a href="#!" class="modal-action 
+                    modal-close waves-effect waves-green 
+                    btn green lighten-1">
+                    Close
+                </a>
+            </div>
+   
+   </div> 
 
     
 	
 	
 	
 	
-<script src="output.52bfe447019f.js"></script>
+
 
 
 
