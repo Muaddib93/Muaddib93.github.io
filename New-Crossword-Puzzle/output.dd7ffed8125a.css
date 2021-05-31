@@ -1534,12 +1534,13 @@ h1 {
     position:sticky;
     position: -webkit-sticky;
 	/*border-top:5px solid #38341c;*/
-    max-width:900px;
+    max-width:800px;
     margin:auto;
 	padding-top:5px;
     display:flex;
 	font-size:8px;
-	width:600px;
+	height:700px;
+	width:550px;
 	background-color:#f5f2cd;
 }
 
@@ -1730,10 +1731,26 @@ h1 {
 
 #clues ol {
 	overflow:auto;
-	height:calc(50vh);
+	
 	list-style-type:none;
 	padding-top:0;
 }
+
+#across-box ol {
+	overflow:auto;
+	height:calc(37vh);
+	list-style-type:none;
+	padding-top:0;
+}
+#down-box ol {
+	overflow:auto;
+	height:calc(43vh);
+	list-style-type:none;
+	padding-top:0;
+}
+
+
+
 
 .clues-stacked #clues ol {
     height:auto;
@@ -1961,7 +1978,7 @@ ol, ul {
     height:-moz-available;
     height: -webkit-fill-available;
     height:fill-available;
-    height:100vh;
+    /*height:100vh;*/
     /*position:fixed;
     top:0;
     left:0;
