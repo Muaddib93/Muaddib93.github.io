@@ -1534,7 +1534,10 @@ h1 {
     position:sticky;
     position: -webkit-sticky;
 	/*border-top:5px solid #38341c;*/
-    max-width:800px;
+    max-width:550px;
+	max-height:700px;
+	min-width:550px;
+	min-height:700px;
     margin:auto;
 	padding-top:5px;
     display:flex;
@@ -1738,12 +1741,16 @@ h1 {
 
 #across-box ol {
 	overflow:auto;
+	max-height:calc(37vh);
+	min-height:calc(37vh);
 	height:calc(37vh);
 	list-style-type:none;
 	padding-top:0;
 }
 #down-box ol {
 	overflow:auto;
+	max-height:calc(43vh);
+	min-height:calc(43vh);
 	height:calc(43vh);
 	list-style-type:none;
 	padding-top:0;
