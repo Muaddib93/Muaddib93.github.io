@@ -70,19 +70,9 @@ $(document).ready(function(){
 
 <body>
 
-
-<nav class="indigo darken-3 z-depth-0">
-            <div class="nav-wrapper">
-                <div id="main_title" class="v_center primary_text game_title"></div>
-                <ul class="right">
-                    <li class=""><a id="reload" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">undo</i></a></li>
-                    <li class=""><a href="#modal1" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
-					
-                </ul>
-            </div>
-        </nav>
-
-<div class="fixed-action-btn horizontal" style="top: 3px; right: 120px; position: absolute">
+  
+    <div id="flex-wrapper" role="main">
+	<div class="fixed-action-btn horizontal" style="top: 3px; right: 120px; position: absolute">
     <a class="btn-floating btn-large red">
       <i class="large material-icons">dehaze</i>
     </a>
@@ -96,8 +86,20 @@ $(document).ready(function(){
 	  
     </ul>
   </div>
-  
-    <div id="flex-wrapper" role="main">
+	<div class="nav-bar" style="width:2000px">
+<nav class="indigo darken-3 z-depth-0">
+            <div class="nav-wrapper">
+                <div id="main_title" class="v_center primary_text game_title"></div>
+                <ul class="right">
+                    <li class=""><a id="reload" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">undo</i></a></li>
+                    <li class=""><a href="#modal1" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
+					
+                </ul>
+            </div>
+        </nav>
+
+
+<div class="inside-nav-bar">
         <div id="puzzle" class="valid-parent">
             
                 <div id="wrapper">
@@ -111,9 +113,8 @@ $(document).ready(function(){
 
             <input style="background-color:red;" autocorrect="off" autocapitalize="off" type="text" tabindex="-1" id="hidden-field" />
             <div id="crossword" class="cx" style="margin-bottom:20px;">
-  
-<svg viewBox="-0.5 -0.5 900 700" preserveAspectRatio="xMidYMin meet" data-height="600.5" data-width="900.5" style="max-height:600.5px; max-width:900.5px; min-height:600.5px; min-width:900.5px" xmlns="http://www.w3.org/2000/svg">              
-
+               
+<svg viewBox="-0.5 -0.5 661 1111" preserveAspectRatio="xMidYMin meet" data-height="1111.5" data-width="661.5" style="max-height:641.5px; max-width:661.5px;min-height:641.5px; min-width:661.5px ;background-color:#f5f2cd; position:relative" xmlns="http://www.w3.org/2000/svg">
 
 <style type="text/css">
 
@@ -188,6 +189,8 @@ $(document).ready(function(){
                     </ol>
                 </div>
             </div>
+			</div>
+			</div>
 			<div>
 			</div>
         </div>
