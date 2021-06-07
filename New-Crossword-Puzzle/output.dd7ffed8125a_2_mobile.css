@@ -1952,7 +1952,7 @@ ol, ul {
 #puzzle {
     flex:1;
     overflow:auto;
-    position:relative;
+    position:static;
 }
 
 #toggle-layout {
