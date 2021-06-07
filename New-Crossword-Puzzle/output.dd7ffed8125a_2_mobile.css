@@ -1522,7 +1522,7 @@ h1 {
 	/*border-top:5px solid #38341c;*/
     max-width:900px;
     margin:auto;
-	padding-top:5px;
+	/*padding-top:5px;*/
     display:flex;
 	font-size:14px;
 }
@@ -1941,7 +1941,7 @@ ol, ul {
     height:-moz-available;
     height: -webkit-fill-available;
     height:fill-available;
-    height:100vh;
+    height:50vh;
     /*position:fixed;
     top:0;
     left:0;
