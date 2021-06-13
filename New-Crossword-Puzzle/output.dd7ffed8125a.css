@@ -23,9 +23,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
-
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -535,12 +532,13 @@ p.error {
 }
 
 #menu ul li {
-    font-size:8px;
+    font-size:14px;
     margin-bottom:3px;
 }
 
 #stage-2 {
-	
+	/*border-top:5px solid #38341c;*/
+	border-bottom:5px solid #38341c;
 	/*padding:20px 25px;*/
 }
 
@@ -1213,10 +1211,6 @@ legend {
     z-index:100;
 }
 
-.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
-     margin: 0px 0;
-}
-
 .modal {
     background-color:#fff;
     max-width:500px;
@@ -1226,10 +1220,7 @@ legend {
     max-height:100%;
     overflow:auto;
 }
-.modal .modal-footer{
-	background-color:#fff;
-	height:0px;
-}
+
 .modal button {
     margin:auto;
     display:block;
@@ -1238,10 +1229,6 @@ legend {
 
 .modal #id_email {
     padding:3px;
-}
-
-.modal .modal-content{
-	padding:0px;
 }
 
 .modal .errorlist {
@@ -1526,7 +1513,6 @@ h1 {
 
 /* interactive */
 
-
 #clues {
 	bottom:0;
     z-index:2;
@@ -1534,16 +1520,11 @@ h1 {
     position:sticky;
     position: -webkit-sticky;
 	/*border-top:5px solid #38341c;*/
-    max-width:550px;
-	max-height:700px;
-	
+    max-width:900px;
     margin:auto;
-	padding-top:5px;
+	/*padding-top:5px;*/
     display:flex;
-	font-size:8px;
-	height:700px;
-	width:650px;
-	background-color:#f5f2cd;
+	font-size:14px;
 }
 
 #hidden-field {
@@ -1596,7 +1577,6 @@ h1 {
 
 #clues li, #clues p {
 	margin-bottom:5px;
-	font-size:14px
 }
 
 #clues li.active {
@@ -1678,7 +1658,6 @@ h1 {
     /*background-color:rgba(255,255,255,.90);*/
     /*position:sticky;*/
 	/*border-top:5px solid #38341c;*/
-	border-left:1px solid #38341c;
     margin:5px auto 0 auto;
     display:flex;
 	font-size:14px;
@@ -1698,7 +1677,6 @@ h1 {
 
 #across-box {
     margin-right:10px;
-	
 }
 
 #down li:last-child, #across li:last-child {
@@ -1707,7 +1685,6 @@ h1 {
 
 #down-box {
     margin-left:10px;
-	border-top:1px solid #38341c;
 }
 
 .clues-stacked #down-box,
@@ -1733,30 +1710,10 @@ h1 {
 
 #clues ol {
 	overflow:auto;
-	
+	height:calc(25vh);
 	list-style-type:none;
 	padding-top:0;
 }
-
-#across-box ol {
-	overflow:auto;
-	max-height:calc(37vh);
-	min-height:calc(37vh);
-	height:calc(37vh);
-	list-style-type:none;
-	padding-top:0;
-}
-#down-box ol {
-	overflow:auto;
-	max-height:calc(43vh);
-	min-height:calc(43vh);
-	height:calc(43vh);
-	list-style-type:none;
-	padding-top:0;
-}
-
-
-
 
 .clues-stacked #clues ol {
     height:auto;
@@ -1957,7 +1914,6 @@ ol, ul {
     /*flex-direction:column;*/
 }
 
-
 .mini-menu-proper #mini-menu,
 .mini-menu-proper #mini-menu-content {
     flex-direction:column;
@@ -1981,7 +1937,6 @@ ol, ul {
 	display:flex;
 	flex-direction:column;
 }
-
 .inside-nav-bar{
 	display:flex;
 	flex-direction:row;
@@ -1993,7 +1948,7 @@ ol, ul {
     height:-moz-available;
     height: -webkit-fill-available;
     height:fill-available;
-    /*height:100vh;*/
+    /*height:60vh;*/
     /*position:fixed;
     top:0;
     left:0;
@@ -2016,7 +1971,7 @@ ol, ul {
 }
 
 #clues {
-    /*position:absolute;*/
+    /*position:relative;*/
     /*background-color:red;*/
 	display:flex;
 	flex-direction:column;
@@ -2065,7 +2020,7 @@ ol, ul {
     }
 
     #clues {
-        width:15vw;
+        width:25vw;
         height:100vh;
         /*overflow:hidden;*/
         overflow:auto;
@@ -2202,7 +2157,6 @@ ol, ul {
     #clues ol {
         overflow:visible;
         height:auto;
-		width:-20px;
     }
 
     #crossword {
