@@ -530,6 +530,7 @@ p.error {
     list-style-type:circle;
     color:#fff;
 }
+}
 
 #menu ul li {
     font-size:14px;
@@ -538,7 +539,7 @@ p.error {
 
 #stage-2 {
 	/*border-top:5px solid #38341c;*/
-	border-bottom:5px solid #38341c;
+	/*border-bottom:5px solid #38341c;*/
 	/*padding:20px 25px;*/
 }
 
@@ -1520,7 +1521,8 @@ h1 {
     position:sticky;
     position: -webkit-sticky;
 	/*border-top:5px solid #38341c;*/
-    max-width:900px;
+    max-width:600px;
+	min-width:600px;
     margin:auto;
 	/*padding-top:5px;*/
     display:flex;
@@ -1547,6 +1549,7 @@ h1 {
 
 #across-box {
     margin-right:10px;
+	margin-bottom:-100px
 }
 
 #down-box {
@@ -1564,7 +1567,7 @@ h1 {
 }
 
 #clues ol {
-	overflow:auto;
+	/*overflow:auto;*/
 	height:calc(25vh);
 	list-style-type:none;
 	padding-top:0;
@@ -1668,7 +1671,7 @@ h1 {
 .clues-stacked #clues {
     display:block;
     height:25vh;
-    overflow:auto;
+    /*overflow:auto;*/
 }
 
 #across-box, #down-box {
@@ -1709,7 +1712,7 @@ h1 {
 }
 
 #clues ol {
-	overflow:auto;
+	/*overflow:auto;*/
 	height:calc(25vh);
 	list-style-type:none;
 	padding-top:0;
@@ -1936,10 +1939,12 @@ ol, ul {
 .nav-bar{
 	display:flex;
 	flex-direction:column;
+	margin-bottom:-50px;
 }
 .inside-nav-bar{
 	display:flex;
 	flex-direction:row;
+	margin-bottom:-100px;
 }
 
 #flex-wrapper {
@@ -1948,7 +1953,7 @@ ol, ul {
     height:-moz-available;
     height: -webkit-fill-available;
     height:fill-available;
-    /*height:60vh;*/
+
     /*position:fixed;
     top:0;
     left:0;
@@ -1960,6 +1965,7 @@ ol, ul {
     flex:1;
     position:relative;
 	background-color:#f5f2cd;
+
 }
 
 #toggle-layout {
@@ -2008,14 +2014,14 @@ ol, ul {
     #clues ol {
         width:auto;
         /*height:100%;*/
-        height:auto;
+        height:100%;
     }
 
     #across-box, #down-box {
         /*height:100vh;*/
         margin-left:0;
         margin-right:10px;
-        margin-bottom:20px;
+        margin-bottom:-20px;
 
     }
 
@@ -2023,7 +2029,7 @@ ol, ul {
         width:25vw;
         height:100vh;
         /*overflow:hidden;*/
-        overflow:auto;
+        /*overflow:auto;*/
         display:block;
     }
 
@@ -2039,7 +2045,7 @@ ol, ul {
     }
 
     #clues {
-        position:static;
+        position:fixed;
     }
 
     #clues-inner {
@@ -2047,8 +2053,8 @@ ol, ul {
     }
 
     #clues ol {
-        overflow:visible;
-        height:auto;
+        /*overflow:visible;*/
+        height:100%;
     }
 
     .clues-stacked #clues {
@@ -2087,8 +2093,8 @@ ol, ul {
     }
 
     #clues ol {
-        overflow:auto;
-        height:auto;
+        /*overflow:auto;*/
+        height:100%;
     }
 
     #clues li.active {
@@ -2155,8 +2161,8 @@ ol, ul {
     }
 
     #clues ol {
-        overflow:visible;
-        height:auto;
+        /*overflow:visible;*/
+        height:100%;
     }
 
     #crossword {
@@ -2186,8 +2192,8 @@ ol, ul {
     }
 
     #clues ol {
-        overflow:auto;
-        height:auto;
+        /*overflow:auto;*/
+        height:100%;
     }
 
     #clues li.active {
