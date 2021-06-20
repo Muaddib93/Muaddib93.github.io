@@ -1660,7 +1660,7 @@ h1 {
 	/*border-top:5px solid #38341c;*/
     margin:5px auto 0 auto;
     display:flex;
-	font-size:14px;
+	font-size:11px;
     touch-action: manipulation;
     max-width:900px;
 }
