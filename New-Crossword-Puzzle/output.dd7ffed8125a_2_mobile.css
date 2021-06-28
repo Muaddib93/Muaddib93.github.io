@@ -60,6 +60,16 @@ body {
     font-size:14px;
 }
 
+.btn-floating {
+  border: none;
+  background-color: inherit;
+  text-align:center;
+  font-weight:bold;
+  font-family:sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 button, .button-like {
     font-size:16px;
     border:1px solid #999;
